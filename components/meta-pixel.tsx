@@ -13,27 +13,6 @@ export function MetaPixel() {
 
     const eventId = generateEventId()
 
-    // PageView no navegador com eventID para deduplicar com o servidor
-    const sendPageView = () => {
-      if (typeof window.fbq === "function") {
-        window.fbq("track", "PageView", {}, { eventID: eventId })
-      }
-    }
-
-    // fbq pode ainda não estar pronto quando o efeito roda
-    if (typeof window.fbq === "function") {
-      sendPageView()
-    } else {
-      const timer = window.setInterval(() => {
-        if (typeof window.fbq === "function") {
-          sendPageView()
-          window.clearInterval(timer)
-        }
-      }, 200)
-      window.setTimeout(() => window.clearInterval(timer), 4000)
-    }
-
-    // PageView no servidor (Conversions API) com o mesmo eventId
     function readCookie(name: string) {
       const match = document.cookie.match(new RegExp(`(?:^|; )${name}=([^;]*)`))
       return match ? decodeURIComponent(match[1]) : undefined
@@ -65,6 +44,7 @@ export function MetaPixel() {
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '${META_PIXEL_ID}');
+        fbq('track', 'PageView');
       `}
     </Script>
   )

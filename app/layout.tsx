@@ -5,9 +5,10 @@ import "./globals.css"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { MetaPixel } from "@/components/meta-pixel"
+import { META_PIXEL_ID } from "@/lib/meta-pixel"
 
 export const metadata: Metadata = {
-  title: "Vecel ENEM - Seja aprovado em 2026",
+  title: "Vercel ENEM - Seja aprovado em 2026",
   description:
     "Seja aprovado no ENEM: curso intensivo para 30 dias com inteligência artificial e 7 professores. Acelere sua preparação com técnicas focadas no exame.",
   generator: "v0.app",
@@ -15,19 +16,19 @@ export const metadata: Metadata = {
     icon: "/vercel-school-logo-transparent.png",
     apple: "/vercel-school-logo-transparent.png",
   },
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL("https://vercelenem.vercel.app"),
   openGraph: {
-    title: "Vecel ENEM - Seja aprovado em 2026",
+    title: "Vercel ENEM - Seja aprovado em 2026",
     description:
       "Seja aprovado no ENEM: curso intensivo para 30 dias com inteligência artificial e 7 professores.",
-    url: "/",
-    siteName: "Vecel ENEM",
+    url: "https://vercelenem.vercel.app/",
+    siteName: "Vercel ENEM",
     images: [
       {
-        url: "/vercel-school-logo-transparent.png",
+        url: "https://vercelenem.vercel.app/vercel-school-logo-transparent.png",
         width: 1200,
         height: 1200,
-        alt: "Vecel ENEM logo",
+        alt: "Vercel ENEM logo",
       },
     ],
     locale: "pt_BR",
@@ -35,16 +36,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vecel ENEM - Seja aprovado em 2026",
+    title: "Vercel ENEM - Seja aprovado em 2026",
     description:
       "Seja aprovado no ENEM: curso intensivo para 30 dias com inteligência artificial e 7 professores.",
-    images: ["/vercel-school-logo-transparent.png"],
+    images: ["https://vercelenem.vercel.app/vercel-school-logo-transparent.png"],
   },
-  other: [
-    { name: "keywords", content: "ENEM,ENEM 2026,preparacao ENEM,estudo ENEM,redacao ENEM,simulados ENEM,inteligencia artificial estudo" },
-    { name: "robots", content: "index,follow" },
-    { name: "author", content: "Vecel ENEM" },
-  ],
+  other: {
+    keywords: "ENEM,ENEM 2026,preparacao ENEM,estudo ENEM,redacao ENEM,simulados ENEM,inteligencia artificial estudo",
+    robots: "index,follow",
+    author: "Vercel ENEM",
+  },
 }
 
 const orbitron = Orbitron({
@@ -73,24 +74,24 @@ export default function RootLayout({
           "@graph": [
             {
               "@type": "Organization",
-              "name": "Vecel ENEM",
-              "url": "http://localhost:3000",
-              "logo": "http://localhost:3000/vercel-school-logo-transparent.png"
+              "name": "Vercel ENEM",
+              "url": "https://vercelenem.vercel.app",
+              "logo": "https://vercelenem.vercel.app/vercel-school-logo-transparent.png"
             },
             {
               "@type": "WebSite",
-              "name": "Vecel ENEM",
-              "url": "http://localhost:3000",
+              "name": "Vercel ENEM",
+              "url": "https://vercelenem.vercel.app",
               "potentialAction": {
                 "@type": "SearchAction",
-                "target": "http://localhost:3000/?s={search_term_string}",
+                "target": "https://vercelenem.vercel.app/?s={search_term_string}",
                 "query-input": "required name=search_term_string"
               }
             },
             {
               "@type": "WebPage",
-              "name": "Vecel ENEM - Seja aprovado em 2026",
-              "url": "http://localhost:3000",
+              "name": "Vercel ENEM - Seja aprovado em 2026",
+              "url": "https://vercelenem.vercel.app",
               "description": "Seja aprovado no ENEM: curso intensivo para 30 dias com inteligência artificial e 7 professores."
             }
           ]
@@ -101,7 +102,7 @@ export default function RootLayout({
             height="1"
             width="1"
             style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=1547784333801355&ev=PageView&noscript=1"
+            src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
             alt=""
           />
         </noscript>

@@ -96,7 +96,7 @@ export function PricingSection() {
 
   function declineUpsell() {
     setUpsellOpen(false)
-    goToCheckout(CHECKOUT_LINKS.basic, 19.9)
+    goToCheckout(CHECKOUT_LINKS.basic)
   }
 
   return (

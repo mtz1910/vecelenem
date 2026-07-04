@@ -212,7 +212,6 @@ export const Html = () => {
           antialias: true,
           alpha: false,
           preserveDrawingBuffer: true,
-          clearColor: "#000000",
         }}
         dpr={[1, 2]}
       >
