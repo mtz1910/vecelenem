@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Vercel ENEM favicon">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#22c55e" />
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="#07111f" />
+  <rect x="24" y="24" width="208" height="208" rx="44" fill="url(#g)" opacity="0.18" />
+  <path d="M78 72h32l31 56 31-56h32l-48 84h-30z" fill="#ffffff" />
+  <circle cx="184" cy="176" r="20" fill="#ffffff" opacity="0.95" />
+</svg>
