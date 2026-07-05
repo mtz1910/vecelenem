@@ -183,7 +183,7 @@ export function PricingSection() {
 
           <div className="text-center my-2">
             <p className="text-sm text-gray-500 line-through font-space-mono">R$ 39,90</p>
-            <p className="text-5xl font-extrabold text-red-500 font-orbitron">R$ 29,90</p>
+            <p className="text-5xl font-extrabold text-red-500 font-orbitron">R$ 19,90</p>
             <p className="mt-2 text-sm text-gray-700 font-space-mono">
               Vídeo aulas, simulados, redação completa e todos os bônus por só R$10 a mais.
             </p>
