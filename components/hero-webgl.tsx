@@ -129,10 +129,10 @@ export const Hero3DWebGL = () => {
 
   useEffect(() => {
     if (visibleWords < titleWords.length) {
-      const timeout = setTimeout(() => setVisibleWords(visibleWords + 1), 100)
+      const timeout = setTimeout(() => setVisibleWords(visibleWords + 1), 50)
       return () => clearTimeout(timeout)
     } else {
-      const timeout = setTimeout(() => setSubtitleVisible(true), 200)
+      const timeout = setTimeout(() => setSubtitleVisible(true), 50)
       return () => clearTimeout(timeout)
     }
   }, [visibleWords, titleWords.length])
