@@ -194,7 +194,7 @@ export function PricingSection() {
               onClick={acceptUpsell}
               className="w-full h-auto whitespace-normal bg-red-500 hover:bg-red-600 text-white font-geist border-0 text-sm md:text-base py-4 px-3 leading-tight"
             >
-              SIM! QUERO O COMPLETO POR R$29,90
+              SIM! QUERO O COMPLETO POR R$19,90
             </Button>
             <button
               onClick={declineUpsell}
