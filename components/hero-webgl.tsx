@@ -210,14 +210,14 @@ export const Hero3DWebGL = () => {
             className="max-w-md text-center text-xs md:text-base font-semibold text-white normal-case px-2"
             style={{ textShadow: "0 2px 20px rgba(0,0,0,1), 0 1px 6px rgba(0,0,0,1)" }}
           >
-            Seja aprovado no ENEM, estudando menos de 30 dias com Inteligência Artificial e com ajuda de 7 professores
+            Seja aprovado no ENEM, estudando menos de 30 dias com a Apostila completa do ENEM <span className="text-red-500">(Ingês, Espanhol, Matemática, Natureza, Humanas,Linguagens, Redação)</span> e com ajuda de 7 professores
           </p>
           <a
             href="#pricing"
             className="pointer-events-auto inline-flex flex-col items-center rounded-xl bg-red-500 px-8 py-3.5 text-center font-orbitron text-sm md:text-base font-bold leading-tight text-white shadow-[0_0_30px_rgba(239,68,68,0.5)] transition-all duration-300 hover:scale-105 hover:bg-red-600"
           >
             <span>QUERO PASSAR NO</span>
-            <span className="normal-case">👇ENEM 2026👇</span>
+            <span className="normal-case">ENEM 2026</span>
           </a>
         </div>
       </div>
