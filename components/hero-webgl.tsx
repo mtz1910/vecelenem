@@ -190,7 +190,7 @@ export const Hero3DWebGL = () => {
           }}
         >
           <h2
-            className="text-sm md:text-2xl xl:text-3xl 2xl:text-4xl mt-3 md:mt-4 text-black font-bold max-w-4xl mx-auto text-center px-2 normal-case"
+            className="text-sm md:text-2xl xl:text-3xl 2xl:text-4xl mt-3 md:mt-4 text-white font-bold max-w-4xl mx-auto text-center px-2 normal-case"
             style={{ textShadow: "0 2px 20px rgba(0,0,0,0.15), 0 1px 6px rgba(0,0,0,0.1)" }}
           >
             O segredo do ENEM: identifique a <span className="text-red-500">resposta certa</span> em segundos.
@@ -207,7 +207,7 @@ export const Hero3DWebGL = () => {
           }}
         >
           <p
-            className="max-w-md text-center text-xs md:text-base font-semibold text-gray-700 normal-case px-2"
+            className="max-w-md text-center text-xs md:text-base font-semibold text-white-700 normal-case px-2"
             style={{ textShadow: "0 2px 20px rgba(0,0,0,1), 0 1px 6px rgba(0,0,0,1)" }}
           >
             Seja aprovado no ENEM, estudando menos de 30 dias com Inteligência Artificial e com ajuda de 7 professores
