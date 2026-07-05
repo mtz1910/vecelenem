@@ -177,7 +177,7 @@ export const Hero3DWebGL = () => {
                       : "0 4px 20px rgba(0,0,0,0.95), 0 2px 8px rgba(0,0,0,0.95), 0 0 24px rgba(255,255,255,0.2)",
                 }}
               >
-                <span className={index === 1 ? "text-red-500" : "text-black"}>{word}</span>
+                <span className={index === 1 ? "text-red-500" : "text-white"}>{word}</span>
               </div>
             ))}
           </div>
@@ -207,7 +207,7 @@ export const Hero3DWebGL = () => {
           }}
         >
           <p
-            className="max-w-md text-center text-xs md:text-base font-semibold text-white-700 normal-case px-2"
+            className="max-w-md text-center text-xs md:text-base font-semibold text-white normal-case px-2"
             style={{ textShadow: "0 2px 20px rgba(0,0,0,1), 0 1px 6px rgba(0,0,0,1)" }}
           >
             Seja aprovado no ENEM, estudando menos de 30 dias com Inteligência Artificial e com ajuda de 7 professores
