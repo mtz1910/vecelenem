@@ -12,21 +12,22 @@ import {
 } from "@/components/ui/dialog"
 
 const CHECKOUT_LINKS = {
-  basic: "https://ggcheckout.app/checkout/v5/NBX7kZL7Z9gh3QBuGCq5", // R$ 19,90
+  basic: "https://ggcheckout.app/checkout/v5/NBX7kZL7Z9gh3QBuGCq5", // R$ 10,00
   upsell: "https://ggcheckout.app/checkout/v5/DqIVMHV6cuRVL63VPfbV", // R$ 29,90
-  full: "https://ggcheckout.app/checkout/v5/LIHSNbEsB6BYfboE4dgV", // R$ 39,90
+  full: "https://ggcheckout.app/checkout/v5/LIHSNbEsB6BYfboE4dgV", // R$ 29,90
 }
 
 const plans = [
   {
     id: "basic",
-    name: "Estudo Base",
+    name: "Combo ENEM",
     badge: null,
-    oldPrice: "R$ 69,90",
-    price: "R$ 19,90",
+    oldPrice: "R$ 19,90",
+    price: "R$ 10,00",
     cta: "QUERO GARANTIR MEU DESCONTO",
     highlighted: false,
     benefits: [
+      "Vídeo aulas online",
       "Palavras-Chave do ENEM NOTA 1000",
       "BÔNUS: + de 200 Simulados",
       "Todas as matérias",
@@ -41,10 +42,10 @@ const plans = [
   },
   {
     id: "full",
-    name: "Estudo COMPLETO ENEM",
+    name: "Combo ELITE ENEM",
     badge: "MELHOR CUSTO-BENEFÍCIO",
-    oldPrice: "R$ 100,00",
-    price: "R$ 39,90",
+    oldPrice: "R$ 39,90",
+    price: "R$ 29,90",
     cta: "QUERO GARANTIR MEU DESCONTO",
     highlighted: true,
     benefits: [
@@ -100,11 +101,11 @@ export function PricingSection() {
   }
 
   return (
-    <section id="pricing" className="py-14 px-6 bg-black scroll-mt-16">
+    <section id="pricing" className="py-14 px-6 bg-white scroll-mt-16">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-3 font-orbitron">Escolha o Seu Acesso</h2>
-          <p className="text-base md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed font-space-mono">
+          <h2 className="text-3xl md:text-5xl font-bold text-black mb-3 font-orbitron">Escolha o Seu Acesso</h2>
+          <p className="text-base md:text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed font-space-mono">
             Pagamento único e acesso vitalício. Comece hoje a garantir a sua vaga no ENEM 2026.
           </p>
         </div>
@@ -115,8 +116,8 @@ export function PricingSection() {
               key={plan.name}
               className={`relative flex flex-col rounded-2xl p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 ${
                 plan.highlighted
-                  ? "border-2 border-red-500 bg-gradient-to-b from-neutral-900 to-black shadow-[0_0_40px_rgba(239,68,68,0.25)]"
-                  : "border border-white/10 bg-gradient-to-b from-neutral-900 to-black"
+                  ? "border-2 border-red-500 bg-white shadow-[0_0_40px_rgba(239,68,68,0.15)]"
+                  : "border border-gray-200 bg-white"
               }`}
             >
               {plan.badge && (
@@ -125,7 +126,7 @@ export function PricingSection() {
                 </span>
               )}
 
-              <h3 className="text-2xl font-bold text-white mb-2 mt-1 font-orbitron">{plan.name}</h3>
+              <h3 className="text-2xl font-bold text-black mb-2 mt-1 font-orbitron">{plan.name}</h3>
 
               <div className="mb-5">
                 <p className="text-sm text-gray-500 line-through font-space-mono">{plan.oldPrice}</p>
@@ -139,7 +140,7 @@ export function PricingSection() {
                 {plan.benefits.map((benefit) => (
                   <li
                     key={benefit}
-                    className="flex items-start gap-2.5 text-sm text-gray-200 font-space-mono leading-snug"
+                    className="flex items-start gap-2.5 text-sm text-gray-700 font-space-mono leading-snug"
                   >
                     <Check className="mt-0.5 h-4 w-4 shrink-0 text-red-500" />
                     <span>{benefit}</span>
@@ -153,17 +154,20 @@ export function PricingSection() {
               >
                 {plan.cta}
               </Button>
+              <p className="mt-3 text-center text-[11px] uppercase tracking-[0.2em] text-gray-600 font-space-mono">
+                DIRETOR: MATEUS FERREIRA
+              </p>
             </div>
           ))}
         </div>
 
-        <p className="text-center text-sm text-gray-400 mt-8 font-space-mono">
+        <p className="text-center text-sm text-gray-600 mt-8 font-space-mono">
           Pagamento 100% seguro · Garantia incondicional de 7 dias
         </p>
       </div>
 
       <Dialog open={upsellOpen} onOpenChange={setUpsellOpen}>
-        <DialogContent className="border-2 border-red-500 bg-gradient-to-b from-neutral-900 to-black text-white sm:max-w-md">
+        <DialogContent className="border-2 border-red-500 bg-white text-black sm:max-w-md">
           <DialogHeader>
             <span className="mx-auto mb-1 rounded-full bg-red-500 px-4 py-1 text-xs font-bold text-white font-space-mono w-fit">
               OFERTA EXCLUSIVA
@@ -171,8 +175,8 @@ export function PricingSection() {
             <DialogTitle className="text-center text-2xl font-bold font-orbitron">
               Faça um upgrade agora!
             </DialogTitle>
-            <DialogDescription className="text-center text-gray-300 font-space-mono leading-relaxed">
-              Leve o plano <span className="font-bold text-white">Estudo Full ENEM</span> (que custa R$39,90) por
+            <DialogDescription className="text-center text-gray-700 font-space-mono leading-relaxed">
+              Leve o plano <span className="font-bold text-black">Combo ELITE ENEM</span> por
               apenas:
             </DialogDescription>
           </DialogHeader>
@@ -180,7 +184,7 @@ export function PricingSection() {
           <div className="text-center my-2">
             <p className="text-sm text-gray-500 line-through font-space-mono">R$ 39,90</p>
             <p className="text-5xl font-extrabold text-red-500 font-orbitron">R$ 29,90</p>
-            <p className="mt-2 text-sm text-gray-300 font-space-mono">
+            <p className="mt-2 text-sm text-gray-700 font-space-mono">
               Vídeo aulas, simulados, redação completa e todos os bônus por só R$10 a mais.
             </p>
           </div>
@@ -194,9 +198,9 @@ export function PricingSection() {
             </Button>
             <button
               onClick={declineUpsell}
-              className="text-sm text-gray-400 underline hover:text-gray-200 font-space-mono"
+              className="text-sm text-gray-600 underline hover:text-gray-800 font-space-mono"
             >
-              Não, quero continuar com o básico de R$19,90
+              Não, quero continuar com o básico de R$10,00
             </button>
           </div>
         </DialogContent>

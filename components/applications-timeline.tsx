@@ -81,11 +81,11 @@ export function ApplicationsTimeline() {
   ]
 
   return (
-    <section id="applications" className="py-14 bg-black scroll-mt-16">
+    <section id="applications" className="py-14 bg-white scroll-mt-16">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
         <div className="text-center mb-8">
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-4">Esse material é pra você</h2>
-          <p className="text-gray-300 text-base md:text-xl max-w-3xl mx-auto leading-relaxed">
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-black mb-4">Esse material é pra você</h2>
+          <p className="text-gray-700 text-base md:text-xl max-w-3xl mx-auto leading-relaxed">
             O guia Palavras-Chave do ENEM funciona como um{" "}
             <span className="text-red-500 font-bold">decodificador da prova</span>. Em três passos simples você deixa de
             perder tempo e passa a marcar a resposta certa com segurança.

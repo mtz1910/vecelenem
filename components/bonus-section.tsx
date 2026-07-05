@@ -32,14 +32,14 @@ const bonuses = [
 
 export function BonusSection() {
   return (
-    <section id="bonus" className="py-14 px-6 bg-black scroll-mt-16">
+    <section id="bonus" className="py-14 px-6 bg-white scroll-mt-16">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-8">
           <Badge className="mb-4 bg-red-500/10 text-red-400 border border-red-500/50 font-space-mono tracking-widest">
             BÔNUS EXCLUSIVOS
           </Badge>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-3 font-orbitron">Você Também Leva de Graça</h2>
-          <p className="text-base md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed font-space-mono">
+          <h2 className="text-3xl md:text-5xl font-bold text-black mb-3 font-orbitron">Você Também Leva de Graça</h2>
+          <p className="text-base md:text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed font-space-mono">
             Ao garantir seu acesso hoje, você recebe todos estes bônus gratuitamente para acelerar a sua aprovação.
           </p>
         </div>
@@ -48,7 +48,7 @@ export function BonusSection() {
           {bonuses.map((bonus, index) => (
             <div
               key={index}
-              className="group flex flex-col sm:flex-row gap-4 rounded-2xl border border-red-500/20 bg-gradient-to-b from-neutral-900 to-black p-4 transition-all duration-300 hover:border-red-500/60 hover:shadow-[0_0_30px_rgba(239,68,68,0.25)]"
+              className="group flex flex-col sm:flex-row gap-4 rounded-2xl border border-red-500/20 bg-white p-4 transition-all duration-300 hover:border-red-500/60 hover:shadow-[0_0_30px_rgba(239,68,68,0.15)]"
             >
               <div className="relative aspect-video w-full sm:w-56 shrink-0 overflow-hidden rounded-xl">
                 <Image
@@ -62,8 +62,8 @@ export function BonusSection() {
                 </span>
               </div>
               <div className="flex flex-col justify-center">
-                <h3 className="text-xl font-bold text-white mb-2 font-orbitron">{bonus.title}</h3>
-                <p className="text-sm text-gray-400 leading-relaxed mb-3 font-space-mono">{bonus.description}</p>
+                <h3 className="text-xl font-bold text-black mb-2 font-orbitron">{bonus.title}</h3>
+                <p className="text-sm text-gray-700 leading-relaxed mb-3 font-space-mono">{bonus.description}</p>
                 <div className="flex items-center gap-2">
                   <span className="text-sm text-gray-500 line-through font-space-mono">Valor: {bonus.value}</span>
                   <span className="text-lg font-bold text-red-500 font-orbitron">GRÁTIS</span>
@@ -73,7 +73,7 @@ export function BonusSection() {
           ))}
         </div>
 
-        <p className="text-center text-gray-300 mt-8 font-space-mono">
+        <p className="text-center text-gray-700 mt-8 font-space-mono">
           Todos esses bônus juntos valem mais de <span className="text-red-500 font-bold">R$ 218</span>, mas hoje você
           leva de <span className="text-red-500 font-bold">GRAÇA</span>.
         </p>

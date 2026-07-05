@@ -2,15 +2,15 @@ import { Github, Twitter, Linkedin, Mail } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-black border-t border-red-500/20">
+    <footer className="bg-white border-t border-red-500/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
-            <h2 className="font-orbitron text-2xl font-bold text-white mb-4">
+            <h2 className="font-orbitron text-2xl font-bold text-black mb-4">
               Palavras<span className="text-red-500">Chave</span>
             </h2>
-            <p className="font-space-mono text-gray-300 mb-6 max-w-md">
+            <p className="font-space-mono text-gray-700 mb-6 max-w-md">
               O método que ajuda você a decodificar os enunciados do ENEM, ganhar tempo na prova e conquistar a sua
               aprovação em 2026.
             </p>
@@ -32,7 +32,7 @@ export function Footer() {
 
           {/* Product */}
           <div>
-            <h3 className="font-orbitron text-white font-semibold mb-4">O Método</h3>
+            <h3 className="font-orbitron text-black font-semibold mb-4">O Método</h3>
             <ul className="space-y-2">
               <li>
                 <a
@@ -71,7 +71,7 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="font-orbitron text-white font-semibold mb-4">Suporte</h3>
+            <h3 className="font-orbitron text-black font-semibold mb-4">Suporte</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="font-space-mono text-gray-400 hover:text-red-500 transition-colors duration-200">
@@ -100,7 +100,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-8 pt-8 border-t border-red-500/20">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="font-space-mono text-gray-400 text-sm">
+            <p className="font-space-mono text-gray-600 text-sm">
               © 2026 Palavras-Chave do ENEM. Todos os direitos reservados.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">

@@ -116,7 +116,7 @@ const Scene = () => {
 }
 
 export const Hero3DWebGL = () => {
-  const titleWords = "VECEL".split(" ")
+  const titleWords = "VERCEL".split(" ")
   const [visibleWords, setVisibleWords] = useState(0)
   const [subtitleVisible, setSubtitleVisible] = useState(false)
   const [delays, setDelays] = useState<number[]>([])
@@ -138,7 +138,7 @@ export const Hero3DWebGL = () => {
   }, [visibleWords, titleWords.length])
 
   return (
-    <div className="h-svh bg-black relative overflow-hidden">
+    <div className="h-svh bg-white relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none z-10">
         <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent" />
@@ -177,7 +177,7 @@ export const Hero3DWebGL = () => {
                       : "0 4px 20px rgba(0,0,0,0.95), 0 2px 8px rgba(0,0,0,0.95), 0 0 24px rgba(255,255,255,0.2)",
                 }}
               >
-                <span className={index === 1 ? "text-red-500" : "text-white"}>{word}</span>
+                <span className={index === 1 ? "text-red-500" : "text-black"}>{word}</span>
               </div>
             ))}
           </div>
@@ -189,22 +189,13 @@ export const Hero3DWebGL = () => {
             opacity: subtitleVisible ? undefined : 0,
           }}
         >
-          <p className="mt-2 text-xs md:text-sm text-gray-300 tracking-wider">
-            DIRETOR : <span className="text-red-500 uppercase font-semibold">MATEUS FERREIRA</span>
-          </p>
-        </div>
-        <h2 className="text-sm md:text-2xl xl:text-3xl 2xl:text-4xl mt-3 md:mt-4 text-white font-bold max-w-4xl mx-auto text-center px-2 normal-case">
-          <div
-            className={subtitleVisible ? "fade-in-subtitle" : ""}
-            style={{
-              animationDelay: `${titleWords.length * 0.13 + 0.2 + subtitleDelay}s`,
-              opacity: subtitleVisible ? undefined : 0,
-              textShadow: "0 2px 20px rgba(0,0,0,1), 0 1px 6px rgba(0,0,0,1)",
-            }}
+          <h2
+            className="text-sm md:text-2xl xl:text-3xl 2xl:text-4xl mt-3 md:mt-4 text-black font-bold max-w-4xl mx-auto text-center px-2 normal-case"
+            style={{ textShadow: "0 2px 20px rgba(0,0,0,0.15), 0 1px 6px rgba(0,0,0,0.1)" }}
           >
             O segredo do ENEM: identifique a <span className="text-red-500">resposta certa</span> em segundos.
-          </div>
-        </h2>
+          </h2>
+        </div>
 
         <div
           className={`mt-auto mb-[8vh] md:mt-8 md:mb-0 flex flex-col items-center gap-4 ${
@@ -216,7 +207,7 @@ export const Hero3DWebGL = () => {
           }}
         >
           <p
-            className="max-w-md text-center text-xs md:text-base font-semibold text-gray-100 normal-case px-2"
+            className="max-w-md text-center text-xs md:text-base font-semibold text-gray-700 normal-case px-2"
             style={{ textShadow: "0 2px 20px rgba(0,0,0,1), 0 1px 6px rgba(0,0,0,1)" }}
           >
             Seja aprovado no ENEM, estudando menos de 30 dias com Inteligência Artificial e com ajuda de 7 professores
@@ -239,7 +230,7 @@ export const Hero3DWebGL = () => {
           powerPreference: "high-performance",
         }}
         camera={{ position: [0, 0, 1] }}
-        style={{ background: "#000000" }}
+        style={{ background: "#ffffff" }}
       >
         <Scene />
       </Canvas>
