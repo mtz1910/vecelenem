@@ -144,10 +144,6 @@
     --tw-gradient-to: white !important;
   }
 
-  [class*="text-white"] {
-    color: #111111 !important;
-  }
-
   button[class*="text-white"],
   .bg-red-500[class*="text-white"],
   .bg-red-600[class*="text-white"] {
