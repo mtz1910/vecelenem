@@ -13,7 +13,7 @@ import {
 
 const CHECKOUT_LINKS = {
   basic: "https://ggcheckout.app/checkout/v5/NBX7kZL7Z9gh3QBuGCq5", // R$ 10,00
-  upsell: "https://ggcheckout.app/checkout/v5/DqIVMHV6cuRVL63VPfbV", // R$ 29,90
+  upsell: "https://ggcheckout.app/checkout/v5/DqIVMHV6cuRVL63VPfbV", // R$ 19,90
   full: "https://ggcheckout.app/checkout/v5/LIHSNbEsB6BYfboE4dgV", // R$ 29,90
 }
 
@@ -27,13 +27,15 @@ const plans = [
     cta: "QUERO GARANTIR MEU DESCONTO",
     highlighted: false,
     benefits: [
+      "Acesso ao site (nota1000enem.online)",
+      "Simulados",
       "Vídeo aulas online",
+      "Correção de Redação",
       "Palavras-Chave do ENEM NOTA 1000",
       "BÔNUS: + de 200 Simulados",
       "Todas as matérias",
-      "Provas ENEM + Gabaritos",
-      "Comunidade de Elite no Telegram",
-      "Enviado por e-mail e WhatsApp + acesso ao site",
+      "Comunidade de Elite no Telegram com alunos",
+      "Enviado por e-mail e WhatsApp",
       "PDFs de todas as metérias do ENEM",
       "Apostila completa",
       "Acesso vitalício",
@@ -49,23 +51,23 @@ const plans = [
     cta: "QUERO GARANTIR MEU DESCONTO",
     highlighted: true,
     benefits: [
+      "Acesso ao site (nota1000enem.online)",
       "Curso de INGLÊS pro ENEM",
       "Curso de ESPANHOL pro ENEM",
+      "Correção de Redação",
       "Palavras-Chave do ENEM NOTA 1000",
       "Apostila completa",	 
       "Vídeo aulas online",
-      "BÔNUS SURPRESA",
       "Todas as matérias",
-      "Provas ENEM + Gabarito",
       "+500 Simulados ENEM",
       "Redação Completa",
       "Plano de estudo focado no ENEM",
-      "Comunidade de Elite no Telegram",
+      "Comunidade de Elite no Telegram com alunos",
       "Suporte Individual para dúvidas",
       "Atualizações gratuitas vitálicia",
       "Enviado por e-mail e WhatsApp + Acesso ao site",
-      "PDFs de todas as metérias do ENEM",
       "Acesso vitalício",
+      "BÔNUS SURPRESA",
     ],
   },
 ]
@@ -106,7 +108,7 @@ export function PricingSection() {
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-5xl font-bold text-black mb-3 font-orbitron">Escolha o Seu Acesso</h2>
           <p className="text-base md:text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed font-space-mono">
-            Pagamento único e acesso vitalício. Comece hoje a garantir a sua vaga no ENEM 2026.
+            Pagamento único e acesso vitalício. Comece hoje a garantir a sua vaga na universidade pública.
           </p>
         </div>
 
@@ -184,8 +186,8 @@ export function PricingSection() {
           <div className="text-center my-2">
             <p className="text-sm text-gray-500 line-through font-space-mono">R$ 39,90</p>
             <p className="text-5xl font-extrabold text-red-500 font-orbitron">R$ 19,90</p>
-            <p className="mt-2 text-sm text-gray-700 font-space-mono">
-              Vídeo aulas, simulados, redação completa e todos os bônus por só R$10 a mais.
+            <p className="mt-2 text-sm text-green-500 font-space-mono">
+              Todos os BÔNUS por só R$10 a mais.
             </p>
           </div>
 
