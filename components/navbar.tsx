@@ -23,20 +23,20 @@ export function Navbar() {
             <div className="ml-10 flex items-baseline space-x-8">
               <a
                 href="/#bonus"
-                className="font-geist text-white hover:text-red-500 transition-colors duration-200"
+                className="font-geist text-black hover:text-red-500 transition-colors duration-200"
               >
                 Benefícios
               </a>
               <a
                 href="/#applications"
-                className="font-geist text-white hover:text-red-500 transition-colors duration-200"
+                className="font-geist text-black hover:text-red-500 transition-colors duration-200"
               >
                 Método
               </a>
-              <a href="/#faq" className="font-geist text-white hover:text-red-500 transition-colors duration-200">
+              <a href="/#faq" className="font-geist text-black hover:text-red-500 transition-colors duration-200">
                 Dúvidas
               </a>
-              <a href="/#pricing" className="font-geist text-white hover:text-red-500 transition-colors duration-200">
+              <a href="/#pricing" className="font-geist text-black hover:text-red-500 transition-colors duration-200">
                 Preço
               </a>
             </div>
