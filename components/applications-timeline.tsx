@@ -7,7 +7,7 @@ export function ApplicationsTimeline() {
       title: "Decodifique o Enunciado",
       content: (
         <div>
-          <p className="text-white text-sm md:text-base font-normal mb-6 leading-relaxed">
+          <p className="text-black text-sm md:text-base font-normal mb-6 leading-relaxed">
             A maioria das questões possui gatilhos escondidos no enunciado. Ao bater o olho nessas palavras-chave
             específicas, você entende exatamente o que a banca está pedindo.
           </p>
@@ -32,7 +32,7 @@ export function ApplicationsTimeline() {
       title: "Elimine as Alternativas",
       content: (
         <div>
-          <p className="text-white text-sm md:text-base font-normal mb-6 leading-relaxed">
+          <p className="text-black text-sm md:text-base font-normal mb-6 leading-relaxed">
             Com a palavra-chave em mãos, você descarta automaticamente as alternativas absurdas e reduz a prova a uma
             escolha simples e objetiva.
           </p>
@@ -57,7 +57,7 @@ export function ApplicationsTimeline() {
       title: "Garanta a Resposta Certa",
       content: (
         <div>
-          <p className="text-white text-sm md:text-base font-normal mb-6 leading-relaxed">
+          <p className="text-black text-sm md:text-base font-normal mb-6 leading-relaxed">
             Chegue à alternativa correta com segurança e sobre tempo para revisar. Menos chute, mais pontos e uma nota
             que reflete tudo o que você estudou.
           </p>
