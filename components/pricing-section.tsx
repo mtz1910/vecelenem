@@ -157,7 +157,7 @@ export function PricingSection() {
                 {plan.cta}
               </Button>
               <p className="mt-3 text-center text-[11px] uppercase tracking-[0.2em] text-gray-600 font-space-mono">
-                DIRETOR: MATEUS FERREIRA
+                Prof° Mateus Ferreira
               </p>
             </div>
           ))}
