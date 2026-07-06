@@ -184,7 +184,7 @@ export function PricingSection() {
           </DialogHeader>
 
           <div className="text-center my-2">
-            <p className="text-sm text-gray-500 line-through font-space-mono">R$ 39,90</p>
+            <p className="text-sm text-gray-500 line-through font-space-mono">R$ 109,90</p>
             <p className="text-5xl font-extrabold text-red-500 font-orbitron">R$ 19,90</p>
             <p className="mt-2 text-sm text-green-500 font-space-mono">
               Todos os BÔNUS por só R$10 a mais.
